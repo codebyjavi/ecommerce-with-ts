@@ -1,5 +1,4 @@
 import { bagItem } from "../../types";
-import NavigationLinks from "./NavigationLinks";
 import SearchInput from "./SearchInput";
 
 
@@ -13,7 +12,8 @@ type HeaderProps = {
  bagTotal: number
 }
 
-function Header({bag, removeFromBag, increaseQuantity, decreaseQuantity, clearBag, isEmpty, bagTotal} : HeaderProps) {
+function Header({bag, removeFromBag, increaseQuantity, 
+  decreaseQuantity, clearBag, isEmpty, bagTotal} : HeaderProps) {
 
 
   return (
@@ -22,8 +22,6 @@ function Header({bag, removeFromBag, increaseQuantity, decreaseQuantity, clearBa
         <span className="text-2xl font-bold">Javi<span className="text-blue-500">Shop</span></span>
         
         <SearchInput />
-
-        <NavigationLinks ulStyles="gap-x-5 text-md hidden md:flex" liStyles="cursor-pointer text-xl font-['hind']"/>
         
         <div className="flex items-center relative cursor-pointer group">
 
